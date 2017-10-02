@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FoodRecom</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Настройки</string>
+    <string name="text_label">Необходимо употреблять в пищу \n
+        больше овощей и фруктов. \n
+        Частое употребление фастфуда \n
+        вредит вашему здоровью.\n
+    Необходимо воздерживаться от \n
+        чрезмерного уопотребления алкоголя.</string>
+</resources>

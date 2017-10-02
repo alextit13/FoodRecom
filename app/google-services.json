@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "275207410486",
+    "firebase_url": "https://foodrecom.firebaseio.com",
+    "project_id": "foodrecom",
+    "storage_bucket": "foodrecom.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275207410486:android:c2ac64b99726474c",
+        "android_client_info": {
+          "package_name": "com.bingerdranch.android.foodrecom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "275207410486-n2q1r8gvtvihhvvtas3rktlr233q0cef.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bingerdranch.android.foodrecom",
+            "certificate_hash": "f0708e3b3509553e18f32dcaec283ef465289002"
+          }
+        },
+        {
+          "client_id": "275207410486-gh8c3p3i4p16aieq373uvn379fpt53n1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAWVF3FX8O04n8xejbDbRSNO-kiFQNQM4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "275207410486-gh8c3p3i4p16aieq373uvn379fpt53n1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

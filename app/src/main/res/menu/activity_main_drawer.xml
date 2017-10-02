@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/time_food"
+            android:title="График питания" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/freezer_have"
+            android:title="Холодильник" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/what_eat"
+            android:title="Что поесть" />
+    </group>
+
+    <item android:title="Информация">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Поделиться" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/info_icon"
+                android:title="О нас" />
+        </menu>
+    </item>
+
+</menu>

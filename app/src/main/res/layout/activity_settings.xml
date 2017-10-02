@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="com.bingerdranch.android.foodrecom.Settings">
+    <TextView
+        android:text="Настройки"
+        android:layout_marginTop="10sp"
+        android:textSize="36sp"
+        android:textColor="#580000"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TableRow
+        android:layout_marginTop="30sp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:text="Образ жизни"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/spinner_obraz_zhizni">
+        </Spinner>
+    </TableRow>
+    <TableRow
+        android:layout_marginTop="30sp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:text="Ваш возраст"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/spinner_years">
+        </Spinner>
+    </TableRow>
+    <TableRow
+        android:layout_marginTop="30sp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:text="Ваш пол"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/spinner_sex">
+        </Spinner>
+    </TableRow>
+    <TableRow
+        android:layout_marginTop="30sp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:text="Мы хотим"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/spinner_want">
+        </Spinner>
+    </TableRow>
+    <Button
+        android:id="@+id/ok_button"
+        android:text="OK"/>
+</TableLayout>
