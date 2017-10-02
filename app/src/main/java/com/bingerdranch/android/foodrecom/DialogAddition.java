@@ -35,6 +35,7 @@ public class DialogAddition extends AppCompatActivity {
     private EditText edit_text_massa;
 
     private int result = 0;
+    private String nameProduct = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,7 +71,11 @@ public class DialogAddition extends AppCompatActivity {
                 }else{
                     try {
                         int mass = Integer.parseInt(edit_text_massa.getText().toString());
-                        result = result + (array.getJSONObject(position).getInt("B") * mass/100);
+
+                        nameProduct = null;
+                        nameProduct = list.get(position);
+
+                                result = result + (array.getJSONObject(position).getInt("B") * mass/100);
                         view.animate().rotationY(360f).start();
                         Toast.makeText(DialogAddition.this,"Добавлено " + result + " ккал", Toast.LENGTH_LONG).show();
                     } catch (JSONException e) {
@@ -84,6 +89,11 @@ public class DialogAddition extends AppCompatActivity {
     void btnOK(){
         Intent intent = new Intent();
         intent.putExtra("choice",result);
+        intent.putExtra("choiceText",nameProduct);
+
+        intent.putExtra("much_mass",Integer.parseInt(edit_text_massa.getText().toString()));
+
+
         setResult(RESULT_OK,intent);
         finish();
     }

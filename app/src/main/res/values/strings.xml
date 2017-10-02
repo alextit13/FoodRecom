@@ -11,4 +11,14 @@
         вредит вашему здоровью.\n
     Необходимо воздерживаться от \n
         чрезмерного уопотребления алкоголя.</string>
+    <string name="freezer">Холодильник</string>
+    <string name="add_product">Добавить в холодильник</string>
+    <string name="remove_product">Удалить из холодильника</string>
+    <string name="change_product_mass_1">Масса продукта</string>
+    <string name="change_product_mass_2">Изменение массы продукта</string>
+    <string name="ok">Ок</string>
+    <string name="cancel">Отмена</string>
+    <string name="enter_mass">Введите массу продукта</string>
+    <string name="delete_item">Удаление</string>
+    <string name="delete_item_1">Удалить продукт из холодильника?</string>
 </resources>

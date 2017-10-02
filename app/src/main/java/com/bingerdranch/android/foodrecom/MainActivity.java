@@ -128,18 +128,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     protected void onStart() {
-        sPrefs = getPreferences(MODE_PRIVATE);
-
-        int zavtrak = sPrefs.getInt("zavtrak",0);
-        int obed = sPrefs.getInt("obed",0);
-        int uzin = sPrefs.getInt("uzin",0);
-        String norma_calloriy_String = sPrefs.getString("norma","50");
-        text_view_numCalloriesZavtrak.setText(zavtrak+"");
-        text_view_numCalloriesObed.setText(obed+"");
-        text_view_numCalloriesUzin.setText(uzin+"");
-        water_norma.setText(sPrefs.getString("water_norma","Норма воды : 2,0 л"));
-        norma_calloriy.setText(norma_calloriy_String+"");
         super.onStart();
+
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
     }
 
     void dialogChoise(View v){
@@ -181,6 +176,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
         return super.onOptionsItemSelected(item);
     }
+
+    // ниже мой код
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -374,20 +371,5 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private int transformStringtoInt(String text){
         int result = Integer.valueOf(text);
         return result;
-    }
-
-    @Override
-    protected void onDestroy() {
-
-        sPrefs = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = sPrefs.edit();
-        ed.putInt("zavtrak",transformStringtoInt(text_view_numCalloriesZavtrak.getText().toString()));
-        ed.putInt("obed",transformStringtoInt(text_view_numCalloriesObed.getText().toString()));
-        ed.putInt("uzin",transformStringtoInt(text_view_numCalloriesUzin.getText().toString()));
-        ed.putInt("water_norma",transformStringtoInt(water_norma.getText().toString()));
-
-        ed.putString("norma",norma_calloriy.getText().toString());
-        ed.commit();
-        super.onDestroy();
     }
 }
